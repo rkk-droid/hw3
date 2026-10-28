@@ -13,5 +13,4 @@ CATBOOST_PARAMS = {
     "verbose": 20,
 }
 
-# Порог фрода совпадает с онлайн-скорингом в fraud_detector/src/scorer.py.
 FRAUD_THRESHOLD = 0.5

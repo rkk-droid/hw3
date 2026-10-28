@@ -17,7 +17,6 @@ chmod 777 \
   /opt/airflow/airflow_state \
   /opt/airflow/logs
 
-# Стартовая модель нужна гейту и скорингу до первого успешного прогона DAG.
 if [[ ! -s /opt/airflow/models/latest.txt && -f /opt/airflow/bundled/my_catboost.cbm ]]; then
   cp /opt/airflow/bundled/my_catboost.cbm /opt/airflow/models/my_catboost_initial.cbm.partial
   mv /opt/airflow/models/my_catboost_initial.cbm.partial /opt/airflow/models/my_catboost_initial.cbm

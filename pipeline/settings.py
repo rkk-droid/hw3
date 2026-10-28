@@ -16,8 +16,6 @@ SUPPLY_BATCH = TRAINING_DIR / "supply_batch.parquet"
 PROD_METRICS = MODELS_DIR / "prod_metrics.json"
 
 LABEL = "target"
-# Свои значения поставки: батч меньше семинарских 100 тысяч, глубина истории та же.
 SAMPLE_SIZE = 80_000
 HISTORY_YEARS = 3
-# Скользящее окно фиксированной длины. На семинаре три месяца, здесь четыре.
 WINDOW_MONTHS = 4

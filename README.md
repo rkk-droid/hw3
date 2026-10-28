@@ -35,7 +35,7 @@ flowchart LR
 
 Каталог `model_registry/` смонтирован в Airflow как `/opt/airflow/models` и в `fraud_detector` как `/models`. Отчёты качества лежат рядом, в `dq_reports/` (`/opt/airflow/dq_reports`). Логика задач в `pipeline/`, файлы в `dags/` только собирают граф.
 
-## Параметры, которые отличаются от семинара
+## Параметры
 
 | Параметр | Значение |
 |----------|----------|
@@ -104,7 +104,7 @@ DAG `data_quality` не меняет витрину. Он считает агр�
 cp .env.example .env
 ```
 
-В `.env` укажите абсолютный путь к `train.csv` в `TRAIN_DATA_CSV`. Файл `.env` в этом проекте уже указывает на локальный CSV, если вы запускаете его с этой машины.
+В `.env` укажите абсолютный путь к `train.csv` в `TRAIN_DATA_CSV`.
 
 ```bash
 docker compose up --build

@@ -38,8 +38,6 @@ COLUMNS = [
     "target",
 ]
 
-# Исходное окно из четырёх месяцев: январь–апрель 2019. Первый батч DAG — май 2019.
-# Длина должна совпадать с pipeline.settings.WINDOW_MONTHS.
 INITIAL_WINDOW_START = "2019-01-01"
 INITIAL_WINDOW_END = "2019-04-01"
 INITIAL_NEXT_BATCH = "2019-05-01"
