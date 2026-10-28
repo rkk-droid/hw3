@@ -1,0 +1,10 @@
+.venv
+.env
+*.DS_Store
+*.csv
+__pycache__/
+*.py[cod]
+model_registry/*
+!model_registry/.gitkeep
+dq_reports/*
+!dq_reports/.gitkeep
